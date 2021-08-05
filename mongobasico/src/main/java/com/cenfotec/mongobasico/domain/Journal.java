@@ -23,7 +23,8 @@ public class Journal {
         this.created = format.parse(date);
     }
 
-    public Journal(){}
+    public Journal() {
+    }
 
     public String getId() {
         return id;
@@ -65,9 +66,11 @@ public class Journal {
         this.format = format;
     }
 
-    public String getCreatedAsShort(){return format.format(created);
+    public String getCreatedAsShort() {
+        return format.format(created);
     }
-    public String toString(){
+
+    public String toString() {
         StringBuilder value = new StringBuilder("* JournalEntry(");
         value.append("Id: ");
         value.append(id);
